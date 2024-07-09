@@ -10,7 +10,7 @@ sendBtn.addEventListener("click", (e)=>{
     
     if(localStorage.getItem("usersData")) {
         let users = JSON.parse(localStorage.getItem("usersData"));
-        let userFound = users.map((user)=>{
+        let userFound = users.some((user)=>{
             return user.email === email.value.trim() && user.password === password.value;
         });
         
