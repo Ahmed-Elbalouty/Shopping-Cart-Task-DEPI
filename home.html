@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shooping Cart</title>
+
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <!-- Tailwindcss library -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+
+  <!-- Custom CSS File -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Navbar -->
+  <nav class="nav bg-black shadow-md fixed top-0 z-50 w-full text-white">
+    <div class="container mx-auto py-3 px-8 lg:px-12">
+      <div class="nav-wrapper flex justify-between items-center">
+        <div class="links flex gap-16 items-center text-lg">
+          <div class="logo text-center">
+            <h1 class="text-xl mb-[-5px] font-bold">
+              <a href="index.html">Online</a>
+            </h1>
+            <span class="text-xl font-bold">Shooping</span>
+          </div>
+          <ul class="list-none lg:flex hidden gap-9">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </div>
+        <div class="icons lg:flex hidden gap-5 items-center text-base">
+          <span><i class="fa-solid fa-cart-shopping cursor-pointer text-xl mr-2"></i></span>
+          <a href="login.html" class="py-2 px-4 bg-white rounded-full text-black">Login</a>
+          <a href="index.html" class="py-2 px-4 bg-white rounded-full text-black">Register</a>
+        </div>
+        <div class="bars-icon text-2xl lg:hidden cursor-pointer" onclick="barsIconClick()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <div
+      class="dropdown-menu absolute top-[100%] bg-black text-white shadow-md w-full lg:hidden left-[-100%] duration-500">
+      <div class="container mx-auto py-8 px-8 lg:px-12">
+        <div class="links lg:flex gap-14 items-center text-lg">
+          <ul class="list-none flex flex-col gap-3">
+            <li class="p-2 duration-75 cursor-pointer">
+              <a href="home.html">Home</a>
+            </li>
+            <li class="p-2 duration-75 cursor-pointer">
+              <a href="#products">Products</a>
+            </li>
+            <li class="p-2 duration-75 cursor-pointer">
+              <a href="#">Cart <i class="fa-solid fa-cart-shopping ml-2"></i></a>
+            </li>
+            <li class="p-2 duration-75 flex gap-5">
+              <button class="py-1 px-3 bg-white rounded-full text-black">
+                <a href="login.html">Login</a>
+              </button>
+              <button class="py-1 px-3 bg-white rounded-full text-black">
+                <a href="index.html">Register</a>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+
+  <!-- Start Hero Section -->
+  <section class="min-h-[calc(100vh-76px)] mt-[76px]">
+    <div class="container mx-auto py-3 px-8 lg:px-12 flex items-center justify-center min-h-[calc(100vh-76px)]">
+      <div class="hero-container text-center">
+        <div class="text text-center">
+          <h2 class="text-3xl font-bold mb-4">
+            Online Shopping Website For Getting Data From API
+          </h2>
+          <p class="mx-auto text-lg text-zinc-500 mx-w-[95%] md:max-w-[90%] lg:max-w[80%]">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Obcaecati pariatur quidem vero ad modi praesentium saepe in nulla
+            voluptatum sed explicabo autem quasi, tempora porro laboriosam
+            sequi voluptatibus nemo reiciendis.
+          </p>
+        </div>
+        <div class="btns mt-6">
+          <button class="bg-black text-white px-6 py-2 rounded-full">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+
+  <!-- Start Cards Section -->
+  <section class="bg-black" id="products">
+    <div class="container mx-auto py-3 px-8 lg:px-12">
+      <div class="title">
+        <h1 class="text-3xl font-bold text-center mt-3 mb-12 text-white">Products</h1>
+      </div>
+      <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      </div>
+    </div>
+  </section>
+  <!-- End Cards Section -->
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

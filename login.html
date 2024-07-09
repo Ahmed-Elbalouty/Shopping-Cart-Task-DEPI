@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooping Cart</title>
+
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Tailwindcss library -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <section>
+        <div class="container mx-auto py-3 px-8 lg:px-12">
+            <div class="holder flex items-center justify-center min-h-[100vh]">
+                <div class="content w-full md:w-[75%] lg:w-[50%]">
+                    <div class="data">
+                        <div class="email flex flex-col gap-1">
+                            <label for="email" class="text-lg">Emial</label>
+                            <input type="email" name="email" id="email"
+                                class="outline-none px-2 py-1 text-lg bg-zinc-200 rounded-md">
+                        </div>
+                        <div class="password flex flex-col gap-1 mt-6">
+                            <label for="password" class="text-lg">Password</label>
+                            <input type="password" name="password" id="password"
+                                class="outline-none px-2 py-1 text-lg bg-zinc-200 rounded-md">
+                        </div>
+                    </div>
+
+                    <div class="error text-center mt-2 hidden">
+                        <span class="text-red-600 text-sm">Invalid email or password</span>
+                    </div>
+
+                    <div class="mt-6">
+                        <button class="send bg-indigo-800 p-2 w-full rounded-md text-white">Sign In</button>
+                    </div>
+                    <div class="info mt-6 text-center text-gray-600 text-sm">
+                        <p>If you not have an account <a href="register.html"
+                                class="text-indigo-900 underline underline-offset-4">Sign
+                                Up</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/login.js"></script>
+</body>
+
+</html>
